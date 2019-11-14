@@ -21,5 +21,6 @@ do{
 	}
 } while(isYWrong)
 
-let isPointBelongs = (x <= 5 && y <=5 && ((Math.pow((x - 0),2) + Math.pow((y - 0),2)) > (Math.pow(r,2))) );
+let isPointBelongs = (0 <= x && x <= 5 && 0 <= y && y <=5 && ((Math.pow((x - 0),2) + Math.pow((y - 0),2)) > (Math.pow(r,2))) );
+
 isPointBelongs ? alert('The point belongs to area') : alert('The point does not belong to area')
